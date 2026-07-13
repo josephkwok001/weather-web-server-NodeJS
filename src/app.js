@@ -14,6 +14,7 @@ const viewsPath = path.join(__dirname, "../templates/views")
 const partialsPath = path.join(__dirname, "../templates/partials")
 
 
+
 // Setup handle bars
 app.set("view engine", "hbs")
 app.set("views", viewsPath)
@@ -45,6 +46,7 @@ app.get("/help", (req, res) => {
         name: "Joseph"
     })
 })
+
 
 app.get("/weather", (req, res) => {
     if (!req.query.address) {
